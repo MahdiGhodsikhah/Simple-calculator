@@ -1,32 +1,46 @@
-# ماشین حساب ساده پایتون (Simple Calculator)
+# 🐍 Python Simple Calculator
 
-این یک پروژه ساده ماشین حساب به زبان پایتون است که عملیات اصلی ریاضی را انجام می‌دهد.
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
-## نحوه کارکرد برنامه
+A sleek and efficient command-line calculator built with Python. This project demonstrates basic arithmetic operations and interactive loop handling.
 
-برنامه در یک حلقه بی‌پایان (`while True`) اجرا می‌شود و مراحل زیر را طی می‌کند:
+## 🚀 Features
 
-1. **دریافت ورودی اول**: ابتدا عدد اول را از کاربر می‌گیرد.
-2. **دریافت عملگر**: نوع عملیات ریاضی (`+`, `-`, `*`, `/`) را می‌پرسد.
-3. **دریافت ورودی دوم**: عدد دوم را برای انجام محاسبه می‌گیرد.
-4. **نمایش نتیجه**: حاصل عملیات را محاسبه و چاپ می‌کند.
-5. **سوال برای ادامه**: از کاربر می‌پرسد که آیا می‌خواهد دوباره محاسبه انجام دهد یا خیر (`y/n`).
-   - اگر کاربر `y` را وارد کند، حلقه دوباره تکرار شده و برنامه از ابتدا عدد اول را می‌پرسد.
-   - اگر هر کلید دیگری زده شود، برنامه متوقف می‌شود.
+- **Basic Arithmetic**: Support for addition, subtraction, multiplication, and division.
+- **Interactive CLI**: Easy-to-use command-line interface.
+- **Continuous Execution**: Perform multiple calculations without restarting the script.
+- **Clean Code**: Modular function-based architecture.
 
-## توابع موجود
+## 🛠️ Core Functions
 
-در فایل [Simple calculator.py](file:///d:/GitHub/Simple-calculator/Simple%20calculator.py)، توابع زیر برای محاسبات تعریف شده‌اند:
+The core logic is implemented in [Simple calculator.py](file:///d:/GitHub/Simple-calculator/Simple%20calculator.py) using specific functions for each operation:
 
-- `add(a, b)`: برای جمع دو عدد.
-- `minus(a, b)`: برای تفریق.
-- `divide(a, b)`: برای تقسیم.
-- `multiply(a, b)`: برای ضرب.
+| Function | Symbol | Description |
+| :--- | :---: | :--- |
+| `add(a, b)` | `+` | Returns the sum of two numbers |
+| `minus(a, b)` | `-` | Returns the difference of two numbers |
+| `multiply(a, b)` | `*` | Returns the product of two numbers |
+| `divide(a, b)` | `/` | Returns the quotient of two numbers |
 
-## نحوه اجرا
+## 📖 How It Works
 
-برای اجرای برنامه، کافیست فایل پایتون را با دستور زیر در ترمینال اجرا کنید:
+The program runs within a `while True` loop to provide a seamless user experience:
+
+1. **Input Stage**: Prompts for the first number, the operator, and the second number.
+2. **Calculation**: Maps the operator to the corresponding function using a dictionary (`dic`).
+3. **Output**: Displays the result immediately.
+4. **Loop Control**: Asks `Do you want to continue? (y/n)`.
+   - Pressing **`y`** restarts the process for a new calculation.
+   - Any other key gracefully exits the program.
+
+## 💻 Usage
+
+To run the calculator, ensure you have Python installed and execute the following command:
 
 ```bash
 python "Simple calculator.py"
 ```
+
+---
+*Created with ❤️ for Python enthusiasts.*
